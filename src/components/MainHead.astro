@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-	title = 'Manuel Tejeiro Del Río: Personal Site',
-	description = 'The personal site of Manuel Tejeiro Del Río',
+	title = 'Manuel Tejeiro: Portfolio',
+	description = 'The personal site of Manuel Tejeiro',
 } = Astro.props;
 ---
 
@@ -44,4 +44,15 @@ const {
 		});
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-VQKK1Q0R64"></script>
+<script type="text/partytown" >
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VQKK1Q0R64');
 </script>
