@@ -4,7 +4,7 @@ publishDate: 2021-11-02 00:00:00
 img: /assets/ccep.png
 img_alt: salesforce logo
 description: |
-  NGO & Education Architect
+  Salesforce Platform Architect
 tags:
   - Salesforce
   - Heroku
