@@ -13,7 +13,9 @@
     "@astrojs/check": "^0.3.1",
     "@astrojs/partytown": "^2.0.2",
     "@astrojs/sitemap": "^3.0.3",
+    "@jop-software/astro-cookieconsent": "^2.0.0",
     "astro": "^3.5.5",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vanilla-cookieconsent": "^2.9.2"
   }
 }
