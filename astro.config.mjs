@@ -3,9 +3,6 @@ import partytown from '@astrojs/partytown';
 import sitemap from '@astrojs/sitemap';
 import jopSoftwarecookieconsent from "@jop-software/astro-cookieconsent";
 
-import sentry from "@sentry/astro";
-import spotlightjs from "@spotlightjs/astro";
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.manueltejeiro.com/',
@@ -17,7 +14,7 @@ export default defineConfig({
     current_lang: 'en',
     autoclear_cookies: true,
     // default: false
-    cookie_name: 'cc_cookie_demo2',
+    cookie_name: 'cc_preferences',
     // default: 'cc_cookie'
     cookie_expiration: 365,
     // default: 182
@@ -80,7 +77,7 @@ export default defineConfig({
       'en': {
         consent_modal: {
           title: 'Hello traveller, it\'s cookie time!',
-          description: 'Our website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <a href="#privacy-policy" class="cc-link">Privacy policy</a>',
+          description: 'Our website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent.',
           primary_btn: {
             text: 'Accept all',
             role: 'accept_all' //'accept_selected' or 'accept_all'
@@ -106,10 +103,28 @@ export default defineConfig({
           }],
           blocks: [{
             title: 'Cookie usage',
-            description: 'description'
+            description: `<main>
+        <section>
+            <p>Cookies are small text files stored on your device to help websites remember information about your visit. They improve functionality and enable analytics to provide a better user experience.</p>
+        </section>
+        <section>
+            <p>We use cookies to analyze website traffic and visitor behavior using Google Analytics.</p>
+        </section>
+        <section>
+            <p>For more information on how Google processes data, visit the 
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+            </p>
+        </section>
+        <section>
+            <p>You can manage or disable cookies through your browser settings. Please note that disabling cookies may affect website functionality.</p>
+        </section>
+        <section>
+            <p>If you have questions about this Cookie Policy, please contact us at <a href="mailto:hola@manueltejeiro.com">hola@manueltejeiro.com</a>.</p>
+        </section>
+    </main>`
           }, {
             title: 'Strictly necessary cookies',
-            description: 'description',
+            description: 'Preferences about your cookie consent',
             toggle: {
               value: 'necessary',
               enabled: true,
@@ -120,29 +135,19 @@ export default defineConfig({
             description: 'description',
             toggle: {
               value: 'analytics',
-              enabled: false,
+              enabled: true,
               readonly: false
             },
             cookie_table: [{
               col1: '^_ga',
-              col2: 'yourdomain.com',
-              col3: 'description ...',
+              col2: 'manueltejeiro.com',
+              col3: 'Google analytics',
               is_regex: true
-            }, {
-              col1: '_gid',
-              col2: 'yourdomain.com',
-              col3: 'description ...'
-            }, {
-              col1: 'cc_youtube',
-              col2: 'yourdomain.com',
-              col3: 'Cookie set by iframemanager'
-            }]
-          }, {
-            title: 'More information',
-            description: 'description ...'
+            },
+          ]
           }]
         }
       }
     }
-  }), sentry(), spotlightjs()]
+  }),]
 });
