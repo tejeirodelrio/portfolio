@@ -6,7 +6,7 @@ img_alt: salesforce logo
 description: |
   Salesforce Platform Architect
 tags:
-  - Salesforce
+  - Salesforce Platform
   - Heroku
   - Mulesoft
   - Experience Cloud

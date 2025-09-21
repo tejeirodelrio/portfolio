@@ -6,7 +6,7 @@ img_alt: BI logo
 description: |
   Salesforce Platform Lead and Technical Architect
 tags:
-  - Salesforce
+  - Salesforce Platform
   - Veeva
 ---
 

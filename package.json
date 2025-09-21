@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/partytown": "^2.1.2",
-    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/partytown": "^2.1.4",
+    "@astrojs/sitemap": "^3.6.0",
     "@jop-software/astro-cookieconsent": "^2.0.0",
     "@sentry/astro": "^8.45.0",
     "@spotlightjs/astro": "^2.3.0",
-    "astro": "^5.0.5",
+    "astro": "^5.13.9",
     "typescript": "^5.2.2",
     "vanilla-cookieconsent": "^2.9.2"
   },

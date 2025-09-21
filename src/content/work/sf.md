@@ -4,16 +4,19 @@ publishDate: 2023-03-01 00:00:00
 img: /assets/salesforce.jpg
 img_alt: salesforce logo
 description: |
-  NGO & Education Architect
+  Senior Solution Architect
 tags:
-  - NGO
-  - EDU
+  - Education Cloud
+  - Nonprofit Cloud
+  - Field Service
+  - Salesforce Platform
+  - Agentforce
   - Architect
 ---
 
 ### Position
 
-NGO and Education Architect - Salesforce EMEA Practice
+Senior Solution Architect - EMEA Practices
 
 ### Achievements
 - Build roadmap and develop architecture blueprint to achieve the overall vision.
